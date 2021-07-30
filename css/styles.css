@@ -596,6 +596,7 @@ ul {
   margin-top: 30px;
   flex-basis: calc((100% - 90px) / 3);
   background: var(--secondary-text-color);
+  display: block;
 }
 
 .product:hover {
@@ -603,8 +604,44 @@ ul {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.product-item {
+  display: block;
+}
+
 .product-list {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
+}
+
+.product-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: var(--accent-color);
+  background: rgba(33, 150, 243, 0.9);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 63px 24px;
+  color: var(--secondary-text-color);
+  transform: translateY(100%);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.product:hover .overlay,
+.product:focus .overlay {
+  transform: translateY(0%);
 }
