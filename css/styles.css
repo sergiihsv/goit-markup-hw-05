@@ -695,8 +695,8 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product:hover .overlay,
-.product:focus .overlay {
+.product-item:hover .overlay,
+.product-item:focus .overlay {
   transform: translateY(0%);
 }
 
