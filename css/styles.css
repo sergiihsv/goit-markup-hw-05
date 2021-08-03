@@ -422,6 +422,9 @@ ul {
 }
 .regular-clients-list {
   display: flex;
+  flex-basis: calc(100% / 6 - 30px);
+  flex-wrap: wrap;
+  margin-right: -30px;
 }
 
 .clients-list {
@@ -438,7 +441,7 @@ ul {
   box-sizing: border-box;
   border-radius: 4px;
   fill: var(--clients-color);
-  /* transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
