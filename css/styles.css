@@ -341,7 +341,6 @@ ul {
   background-color: var(--background-color-2);
   padding-top: 94px;
   padding-bottom: 94px;
-  max-width: 1600px;
   margin: 0px auto;
 }
 
@@ -368,12 +367,12 @@ ul {
 
 .members {
   display: flex;
-  /* margin-left: -30px; */
+  margin-left: -30px;
   flex-wrap: wrap;
 }
 
 .members-item {
-  flex-basis: calc(100% - 120px) / 4;
+  /* flex-basis: calc(100% - 120px) / 4; */
   margin-left: 30px;
   background: var(--secondary-text-color);
   box-shadow: 0px 1px 3px rgba(51, 42, 42, 0.12),
